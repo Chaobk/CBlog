@@ -34,3 +34,6 @@ build/
 
 .DS_Store
 /blog-cms-tmp
+
+### 个人配置不上传 ###
+application-dev.preperties
