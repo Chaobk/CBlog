@@ -35,4 +35,4 @@ build/
 log
 application-test.properties
 application-prod.properties
-application-dev.preperties
+/src/main/resources/application-dev.properties
