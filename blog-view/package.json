@@ -1,8 +1,8 @@
 {
   "name": "blog-view",
   "version": "1.0.0",
-  "description": "NBlog view",
-  "author": "Naccl <i@naccl.top>",
+  "description": "CBlog view",
+  "author": "chaobk",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
