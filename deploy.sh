@@ -10,9 +10,9 @@ project_local_path=~/work/idea-project/CBlog
 dev_branch=master
 prod_branch=prod
 server=aliyun
-api_path=/home/cblog/api
-cms_path=/home/cblog/cms
-view_path=/home/cblog/view
+api_path=/home/CBlog/api
+cms_path=/home/CBlog/cms
+view_path=/home/CBlog/view
 
 
 function echo_msg()
