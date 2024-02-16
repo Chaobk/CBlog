@@ -17,16 +17,16 @@
 
 ## 简介
 
-Spring Boot + Vue「前后端分离，人不分离」博客系统
+本项目是Fork的NBlog的代码。
 
-自用博客，长期维护，欢迎勘误
-
-预览地址：
+NBlog效果预览地址：
 
 前台：[https://naccl.top](https://naccl.top)
 
 后台：[https://admin.naccl.top](https://admin.naccl.top)
 
+本项目准备部署完后逐步更改，预览地址如下：
+前台：[http://185.242.235.202:8080/](http://185.242.235.202:8080/)
 
 
 ## 后端
