@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import getPageTitle from '@/util/get-page-title'
 import Layout from '@/layout'
+import AliyunManage from "@/views/pictureHosting/AliyunManage.vue";
 
 Vue.use(VueRouter)
 
@@ -153,6 +154,12 @@ const routes = [
 				name: 'TxyunManage',
 				component: () => import('@/views/pictureHosting/TxyunManage'),
 				meta: {title: '腾讯云', icon: 'el-icon-folder-opened'}
+			},
+			{
+				path: 'aliyun',
+				name: 'AliyunManage',
+				component: () => import('@/views/pictureHosting/AliyunManage.vue'),
+				meta: {title: '阿里云', icon: 'el-icon-folder-opened'}
 			},
 		]
 	},

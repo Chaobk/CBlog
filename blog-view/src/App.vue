@@ -1,4 +1,5 @@
 <template>
+<!--  <meta name="referrer" content="never" />-->
 	<div id="app">
 		<router-view/>
 	</div>
