@@ -3,7 +3,7 @@ import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 
 const request = axios.create({
-	// baseURL: 'https://www.chaobk.com:8090/',
+	// baseURL: 'http://localhost:8090/',
 	baseURL: 'https://api.chaobk.com/',
 	timeout: 10000,
 })
