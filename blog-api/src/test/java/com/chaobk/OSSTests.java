@@ -26,7 +26,7 @@ public class OSSTests {
         String keyPrefix = "";
 
         // 创建OSSClient实例。
-        OSS ossClient = new OSSClientBuilder().build(endpoint, "LTAI5tMbd4PzFjzLkPMssheu", "Y1CWDKb436wqwMdilHo5XfrHz0BHNU");
+        OSS ossClient = new OSSClientBuilder().build(endpoint, "", "");
 
         try {
             // 列举文件。如果不设置keyPrefix，则列举存储空间下的所有文件。如果设置keyPrefix，则列举包含指定前缀的文件。
@@ -66,7 +66,7 @@ public class OSSTests {
         String keyPrefix = "cblog-qq";
 
         // 创建OSSClient实例。
-        OSS ossClient = new OSSClientBuilder().build(endpoint, "LTAI5tMbd4PzFjzLkPMssheu", "Y1CWDKb436wqwMdilHo5XfrHz0BHNU");
+        OSS ossClient = new OSSClientBuilder().build(endpoint, "", "");
 
         try {
             // 列举文件。如果不设置keyPrefix，则列举存储空间下的所有文件。如果设置keyPrefix，则列举包含指定前缀的文件。
