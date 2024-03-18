@@ -13,4 +13,5 @@ public class AliyunProperties {
     private String path;
     private String accessKeyId;
     private String secretAccessKey;
+    private String backupPath;
 }

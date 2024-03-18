@@ -55,7 +55,6 @@ import {isImgExt} from "@/util/validate";
 import {randomUUID} from "@/util/uuid";
 import {copy} from "@/util/copy";
 import OSS from 'ali-oss';
-import path from 'path'
 
 export default {
   name: "AliyunManage",

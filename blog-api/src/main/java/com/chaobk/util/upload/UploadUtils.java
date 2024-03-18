@@ -1,24 +1,28 @@
 package com.chaobk.util.upload;
 
+import com.chaobk.constant.UploadConstants;
+import com.chaobk.exception.BadRequestException;
 import com.chaobk.util.upload.channel.ChannelFactory;
 import com.chaobk.util.upload.channel.FileUploadChannel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.DependsOn;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
-import com.chaobk.constant.UploadConstants;
-import com.chaobk.exception.BadRequestException;
+
+import java.io.IOException;
 
 /**
- * @Description: 图片下载保存工具类
+ * @Description: 上传工具类
  * @Author: Naccl
  * @Date: 2021-11-11
  */
 @Component
+@Slf4j
 @DependsOn("springContextUtils")
 public class UploadUtils {
 	private static RestTemplate restTemplate;
@@ -54,6 +58,16 @@ public class UploadUtils {
 	}
 
 	/**
+	 * 通过文件路径上传文件到oss
+	 * @param filepath 要上传的文件的存放位置
+	 * @return 文件的OSS链接
+	 * @throws IOException
+	 */
+	public static String upload(String filepath) throws IOException {
+		return uploadChannel.upload(filepath);
+	}
+
+	/**
 	 * 从网络获取图片数据
 	 *
 	 * @param url 图片URL
@@ -66,4 +80,5 @@ public class UploadUtils {
 		}
 		throw new BadRequestException("response contentType unlike image");
 	}
+
 }

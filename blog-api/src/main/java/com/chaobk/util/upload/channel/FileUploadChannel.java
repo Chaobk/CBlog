@@ -2,6 +2,8 @@ package com.chaobk.util.upload.channel;
 
 import com.chaobk.util.upload.UploadUtils;
 
+import java.io.IOException;
+
 /**
  * 文件上传方式
  *
@@ -17,4 +19,8 @@ public interface FileUploadChannel {
 	 * @throws Exception
 	 */
 	String upload(UploadUtils.ImageResource image) throws Exception;
+
+	default String upload(String filepath) throws IOException {
+		return null;
+	}
 }
