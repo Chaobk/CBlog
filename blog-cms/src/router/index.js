@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import getPageTitle from '@/util/get-page-title'
 import Layout from '@/layout'
+import AliyunManage from "@/views/pictureHosting/AliyunManage.vue";
 
 Vue.use(VueRouter)
 

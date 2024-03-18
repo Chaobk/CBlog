@@ -50,6 +50,11 @@ public class AliyunChannel implements FileUploadChannel {
             return String.format("https://%s.%s/%s", aliyunProperties.getBucketName(), aliyunProperties.getEndpoint(), uploadName);
         } catch (Exception e) {
             throw new RuntimeException("阿里云OSS上传失败");
+<<<<<<< HEAD
+=======
+        } finally {
+            putObjectRequest.getInputStream().close();
+>>>>>>> origin/dev
         }
     }
 }
